@@ -1,0 +1,35 @@
+
+#loginContainer{
+    background-color: white;
+    border-radius: 50px;
+    height: 500px;
+    
+}
+.col-md-6:nth-child(2){
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: rgba(222, 235, 247, 0.5);
+  
+  
+}
+.col-md-6:nth-child(1) {
+   
+    margin-top: 10%;
+    background-color: white;
+    
+  
+}
+.col-md-6:nth-child(1) h3{
+    color: grey;
+}
+
+  label{
+      color:rgb(196, 182, 182);
+  }
+  
+  .col-md-6:nth-child(1) p{
+      color: rgb(112, 109, 109);
+  }
+  form{
+      margin-top: 30%;
+  }

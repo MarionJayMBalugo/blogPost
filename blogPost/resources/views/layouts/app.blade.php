@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="{{asset('js/modal.js')}}"></script>
     <!-- Fonts -->
+    @yield('css')
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -60,9 +61,7 @@
                                         @csrf
                                     </form>
                                 </li>
-                                <li>
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> {{ __('create post') }}</button>
-                                </li>
+                             
                                 
 
                         @endguest
