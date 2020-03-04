@@ -1,14 +1,15 @@
 @extends('layouts.app')
-
+@section('script')
+<script src="{{asset('js/myPostController.js')}}"></script>
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> {{ __('create post') }}</button>
-                <button type="button" class="btn btn-info btn-lg"><a href="{{route('myPost')}}">
-                        {{ __('my post') }}</a></button>
-
+                <button type="button" class="btn btn-info btn-lg" id="viewMyPosts">{{ __('my post') }}</button>
+    
                 <div class="card-header">POSTS
 
 

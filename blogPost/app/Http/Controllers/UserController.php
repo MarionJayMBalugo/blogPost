@@ -30,8 +30,8 @@ class UserController extends Controller
 
     public function toComment($id)
     { 
-        $comment=$this->comment->selectComments($id)->toArray();
-       return view('updateComment',['comment'=>$comment]);
+        
+       return view('updateComment',['comment'=>$this->comment->selectComments($id)]);
     }
 
     public function updateComment(Request $request)
@@ -54,8 +54,8 @@ class UserController extends Controller
 
     public function toUpdatePost($id)
     { 
-        $post=$this->blog->selectPosts($id);
-       return view('update_mypost',['post'=>$post]);
+        
+       return view('update_mypost',['post'=>$this->blog->selectPosts($id)]);
     }
 
     public function updatePost(Request $request)

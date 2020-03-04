@@ -4,11 +4,13 @@ namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 use Illuminate\Notifications\Notifiable;
-
-
-class User extends Authenticatable
+use Illuminate\Auth\Authenticatable as AuthenticableTrait;
+use Illuminate\Support\Facades\Auth;
+class User extends Authenticatable 
 {
+    use AuthenticableTrait;
     use Notifiable;
 
     /**

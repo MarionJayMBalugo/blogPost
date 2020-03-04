@@ -31,14 +31,12 @@ class HomeController extends Controller
      */
 
     public function index()
-    {
-        $post=$this->userModel->getAllPosts()->toArray();
-        return view('home',['post'=>$post]);
+    {     
+        return view('home',['post'=>$this->userModel->getAllPosts()]);
     }
 
     public function myPost()
-    {
-        $post=$this->userModel->getMyPosts()->toArray();
-        return view('mypost',['post'=>$post]);
+    {   
+        return view('mypost',['myPosts'=>$this->userModel->getMyPosts()]);
     }
 }
